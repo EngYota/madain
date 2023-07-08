@@ -8,10 +8,7 @@
 # Property Style
 # How it Work
 # Contact Info
-# PopUp Modal
-# Agency & Agents Design
 # Blog Designs
-# General Features 
 # Footer Start
 # Responsiveness Start
 # Bottom To top Scroll 
@@ -4150,7 +4147,7 @@ ul:last-child {
  Homes Banner
 ==================================================*/
 .hero-banner {
-    padding:20em 0 5em;
+    padding:17em 0 5em;
     display: flex;
     flex-wrap: wrap;
 	min-height: 400px;
@@ -4257,7 +4254,8 @@ ul:last-child {
 	line-height:1.3;
 }
 .hero-banner p{
-	font-size:18px;
+	font-size: 16px;
+    color: #dbdbdb;
 }
 .hero-banner p.small{
 	font-size:15px;
@@ -4777,6 +4775,14 @@ h1.big-header-capt {
 	text-transform:capitalize;
     color: #f5f5f5;
 }
+h1.big-header {
+	font-weight:700;
+    margin: 0 auto;
+    margin-bottom:0.4em;
+    text-align: center;
+	text-transform:capitalize;
+    color: #a16905;
+}
 .italian-search .input-with-icon .form-control,
 .italian-search .input-with-shadow .form-control,
 .italian-search .input-with-shadow .select2-container,
@@ -5276,7 +5282,7 @@ form.search-big-form.search-shadow, form.search-form.search-shadow {
 .location-property-thumb {
     position: relative;
     overflow: hidden;
-    height: 270px;
+    height: 200px;
 }
 .location-property-thumb img{
     transition:all ease 0.4s;
@@ -9512,7 +9518,7 @@ span.mod-close {
     position: relative;
     box-shadow: 0 0 20px 0 rgb(19 115 234 / 10%);
     -webkit-box-shadow: 0 0 20px 0 rgb(19 115 234 / 10%);
-    height: 550px;
+    height: 510px;
 }
 .blog-thumb {
     padding: 10px;
