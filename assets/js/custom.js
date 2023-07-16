@@ -189,5 +189,53 @@ $(".ba-we-love-subscribers-fab").click(function() {
 		}
 	});
 	
-	
+	// Property Slide
+	$('.team-slide').slick({
+		slidesToShow:4,
+		arrows: false,
+		autoplay:true,
+		dots:true,
+		responsive: [
+		  {
+			breakpoint: 1023,
+			settings: {
+			  arrows: false,
+			  dots:true,
+			  slidesToShow:3
+			}
+		  },
+		  {
+			breakpoint: 768,
+			settings: {
+			  arrows: false,
+			  slidesToShow:2
+			}
+		  },
+		  {
+			breakpoint: 480,
+			settings: {
+			  arrows: false,
+			  slidesToShow:1
+			}
+		  }
+		]
+	  });
+
+
+	  // Select Property Types
+	$('#Types').select2({
+		placeholder: "Type",
+		allowClear: true
+	}); 
+	// Select Property Types
+	$('#ptypes').select2({
+		placeholder: "Bedrooms",
+		allowClear: true
+	});
+
+	  	// Select Town
+	$('#location').select2({
+		placeholder: "Price (AED)",
+		allowClear: true
+	});
 });
