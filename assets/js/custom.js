@@ -176,7 +176,10 @@ $(".ba-we-love-subscribers-fab").click(function() {
 		}
 	}
 	(jQuery, window, document), $(document).ready(function() {
-		$("#navigation").navigation()
+		$("#navigation").navigation();
+
+
+		
 	});
 	
 	$(window).scroll(function() {    
@@ -222,20 +225,58 @@ $(".ba-we-love-subscribers-fab").click(function() {
 	  });
 
 
-	  // Select Property Types
 	$('#Types').select2({
 		placeholder: "Type",
 		allowClear: true
 	}); 
-	// Select Property Types
 	$('#ptypes').select2({
 		placeholder: "Bedrooms",
 		allowClear: true
 	});
-
-	  	// Select Town
 	$('#location').select2({
-		placeholder: "Price (AED)",
+		placeholder: "AED 750K - AED 1M",
 		allowClear: true
+	});
+	$('#Status').select2({
+		placeholder: "Marital Status",
+		allowClear: true
+	});
+	$('#Gender').select2({
+		placeholder: "Gender",
+		allowClear: true
+		});
+
+	$('#Nationality').select2({
+		placeholder: "Nationality",
+		allowClear: true
+	});
+
+
+	// Featured Slick Slider
+	$('.featured_slick_gallery-slide').slick({
+		centerMode: true,
+		infinite:true,
+		centerPadding: '0px',
+		slidesToShow:1,
+		responsive: [
+		{
+		breakpoint: 768,
+		settings: {
+		arrows:true,
+		centerMode: true,
+		centerPadding: '20px',
+		slidesToShow:3
+		}
+		},
+		{
+		breakpoint: 480,
+		settings: {
+		arrows: false,
+		centerMode: true,
+		centerPadding: '20px',
+		slidesToShow:1
+		}
+		}
+		]
 	});
 });
