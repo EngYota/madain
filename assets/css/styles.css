@@ -3113,7 +3113,7 @@ opacity: 1;
 .nav-brand:focus,
 .nav-brand:hover,
 .nav-menu>li>a {
-    color:#0c2339;
+    color:#a16905;
 }
 
 .menu__list,
@@ -3343,10 +3343,8 @@ nav a:hover {
     padding: 12px 15px 12px 26px
 }
 
-.nav-menu>.active>a,
-.nav-menu>.focus>a,
-.nav-menu>li:hover>a {
-    color:#a16905!important;
+.nav-menu>.active>a, .nav-menu>.focus>a, .nav-menu>li:hover>a {
+    color: #a16905!important;
 }
 
 .nav-menu>li>a>[class*=ion-],
@@ -8770,7 +8768,8 @@ a.classical-cats-boxs {
     display: block;
     cursor: pointer;
     text-align: center;
-    height: 300px;
+    height: 185px;
+    border-top: 8px solid #a16905;
 }
 .classical-cats-icon {
     display: inline-flex;
@@ -9159,102 +9158,117 @@ span.mod-close {
     background: #fff !important;
     border: 1px solid #d3d3d3;
 }
-  .ui-datepicker {
-    background: #ffffff;
-    border-radius: 15px;
-  }
-  .ui-datepicker-header {
-    height: 50px;
-    line-height: 50px;
-    color: #ffffff;
-    background: #a16905;
-    margin-bottom: 10px;
-  }
-  .ui-datepicker-prev,
-  .ui-datepicker-next {
-    width: 20px;
-    height: 20px;
-    text-indent: 9999px;
-    border-radius: 100%;
-    cursor: pointer;
-    overflow: hidden;
-    margin-top: 12px;
-  }
-  .ui-datepicker-prev {
-    float: left;
-    margin-left: 12px;
-  }
-  .ui-datepicker-prev:after {
-    transform: rotate(45deg);
-    margin: -43px 0px 0px 8px;
-  }
-  .ui-datepicker-next {
-    float: right;
-    margin-right: 12px;
-  }
-  .ui-datepicker-next:after {
-    transform: rotate(-135deg);
-    margin: -43px 0px 0px 6px;
-  }
-  .ui-datepicker-prev:after,
-  .ui-datepicker-next:after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 8px;
-    height: 8px;
-    border-left: 2px solid #ffffff;
-    border-bottom: 2px solid #ffffff;
-  }
-  .ui-datepicker-prev:hover,
-  .ui-datepicker-next:hover,
-  .ui-datepicker-prev:hover:after,
-  .ui-datepicker-next:hover:after {
-    border-color: #333333;
-  }
-  .ui-datepicker-title {
-    text-align: center;
-    font-size:25px;
-  }
-  .ui-datepicker-calendar {
+ .upload-files-container {
+	display: flex;
+   	align-items: center;
+   	justify-content: center;
+	flex-direction: column;
+}
+.drag-file-area {
+	border: 1px solid #9b6505;
+    border-radius: 13px;
+    margin: 10px 0 15px;
+    padding: 20px 9px;
     width: 100%;
     text-align: center;
-  }
-  .ui-datepicker-calendar thead tr th span {
-    display: block;
-    width: 40px;
-    color: #a16905;
-    margin-bottom: 5px;
-    font-size: 18px;
-  }
-  .ui-state-default {
-    display: block;
-    text-decoration: none;
-    color: #333333;
-    line-height: 40px;
-    font-size: 16px;
-  }
-  .ui-state-default:hover {
-    color: #ffffff;
-    background:#a16905;
-    border-radius:50px;
-    transition: all 0.25s cubic-bezier(0.7, -0.12, 0.2, 1.12);
-  }
-  .ui-state-highlight {
-    color: #ffffff;
-    background-color:#a16905;
-    border-radius:50px;
-  }
-
-  .ui-state-active {
-    color: #ffffff;
-    background-color:#a16905;
-    border-radius:50px;
-  }
-  .ui-datepicker-unselectable .ui-state-default {
-    color: #eee;
-    border: 2px solid transparent;
-  }
+}
+.drag-file-area .upload-icon {
+	font-size: 24px;
+}
+.drag-file-area h3 {
+	font-size: 26px;
+	margin: 15px 0;
+}
+.drag-file-area label {
+	font-size: 19px;
+    color: #656565;
+}
+.drag-file-area label .browse-files-text {
+	color: #7b2cbf;
+	font-weight: bolder;
+	cursor: pointer;
+}
+.browse-files span {
+	position: relative;
+	top: -25px;
+}
+.default-file-input {
+	opacity: 0;
+}
+.cannot-upload-message {
+	background-color: #ffc6c4;
+	font-size: 17px;
+	display: flex;
+	align-items: center;
+	margin: 5px 0;
+	padding: 5px 10px 5px 30px;
+	border-radius: 5px;
+	color: #BB0000;
+	display: none;
+}
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+.cannot-upload-message span, .upload-button-icon {
+	padding-right: 10px;
+}
+.cannot-upload-message span:last-child {
+	padding-left: 20px;
+	cursor: pointer;
+}
+.file-block {
+	color: #f7fff7;
+	background-color: #7b2cbf;
+  	transition: all 1s;
+	width: 390px;
+	position: relative;
+	display: none;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 10px 0 15px;
+	padding: 10px 20px;
+	border-radius: 25px;
+	cursor: pointer;
+}
+.file-info {
+	display: flex;
+	align-items: center;
+	font-size: 15px;
+}
+.file-icon {
+	margin-right: 10px;
+}
+.file-name, .file-size {
+	padding: 0 3px;
+}
+.remove-file-icon {
+	cursor: pointer;
+}
+.progress-bar {
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	left: 4.5%;
+	width: 0;
+	height: 5px;
+	border-radius: 25px;
+	background-color: #4BB543;
+}
+.upload-button {
+	font-family: 'Montserrat';
+	background-color: #7b2cbf;
+	color: #f7fff7;
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+	border: none;
+	border-radius: 20px;
+	margin: 10px;
+	padding: 7.5px 50px;
+	cursor: pointer;
+}
 /*--------------- Agency --------------*/
 .agency{
     box-shadow: 0 0 20px 0 rgb(19 115 234 / 10%);
@@ -11029,6 +11043,7 @@ footer.skin-dark-footer .os-app-caps{
 	border-radius: 50%;
 	overflow: hidden;
 	margin: 0 auto;
+    border: 1px solid #9b65059e;
 }
 .teamgrid-content {
 padding: 15px 0;
@@ -11076,7 +11091,7 @@ text-align: center;
     align-items: center;
     background: #ffffff;
     border-radius: 6px;
-    padding: 1.2em 2em;
+    padding: 1.2em 10px;
     box-shadow: 0 0 20px 0 rgb(19 115 234 / 10%);
 	-webkit-box-shadow: 0 0 20px 0 rgb(19 115 234 / 10%);
 }
@@ -11084,10 +11099,10 @@ text-align: center;
     background: #fff7e8;
     border-radius: 50%;
     width: 130px;
-    height: 84px;
+    height: 69px;
     margin: auto;
     text-align: center;
-    padding-top: 23px;
+    padding-top: 18px;
     line-height: 0;
 }
 .icon-mi-left i{
