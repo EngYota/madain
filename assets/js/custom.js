@@ -193,7 +193,7 @@ $(".ba-we-love-subscribers-fab").click(function() {
 	});
 	
 	// Property Slide
-	$('.team-slide').slick({
+	  $('.team-slide').slick({
 		slidesToShow:4,
 		arrows: false,
 		autoplay:true,
@@ -223,7 +223,6 @@ $(".ba-we-love-subscribers-fab").click(function() {
 		  }
 		]
 	  });
-
 
 	$('#Types').select2({
 		placeholder: "Type",

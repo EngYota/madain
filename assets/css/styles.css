@@ -16,9 +16,7 @@
 
 @import url(../css/plugins/animation.css);
 @import url(../css/plugins/css/bootstrap.min.css);
-/* @import url(../css/plugins/date-picker.css); */
 @import url(../css/plugins/ion.rangeSlider.min.css);
-@import url(../css/plugins/dropzone.css);
 @import url(../css/plugins/select2.css);
 @import url(../css/plugins/slick.css);
 @import url(../css/plugins/slick-theme.css);
@@ -26,8 +24,8 @@
 @import url(../css/plugins/light-box.css);
 @import url(../css/plugins/line-icon.css);
 @import url(../css/plugins/font-icons.css);
-/* @import url(../css/plugins/font-awesome.min.css); */
 @import url(../css/plugins/icofont.css);
+/* @import url(../css/plugins/bootstrap-rtl.min.css); */
 /*------------------------------------
 	Fonts
 ------------------------------------*/
@@ -9184,7 +9182,7 @@ span.mod-close {
     color: #656565;
 }
 .drag-file-area label .browse-files-text {
-	color: #7b2cbf;
+	color: #d18a14;
 	font-weight: bolder;
 	cursor: pointer;
 }
@@ -9219,7 +9217,7 @@ span.mod-close {
 }
 .file-block {
 	color: #f7fff7;
-	background-color: #7b2cbf;
+	background-color: #d18a14;
   	transition: all 1s;
 	width: 390px;
 	position: relative;
@@ -9258,7 +9256,7 @@ span.mod-close {
 }
 .upload-button {
 	font-family: 'Montserrat';
-	background-color: #7b2cbf;
+	background-color: #d18a14;
 	color: #f7fff7;
 	display: flex;
 	align-items: center;
@@ -11193,6 +11191,9 @@ text-align: center;
     outline: none;
 	display:table;
 	margin:5px auto 0 auto;
+}
+.contact-form{
+    position: relative;
 }
 .contact-form-box {
     padding: 40px 30px 50px;
