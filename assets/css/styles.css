@@ -22,6 +22,8 @@
 @import url(../css/plugins/magnific-popup.css);
 @import url(../css/plugins/light-box.css);
 @import url(../css/plugins/line-icon.css);
+@import url(../css/plugins/font-icons.css);
+@import url(../css/plugins/icofont.css);
 /* @import url(../css/plugins/bootstrap-rtl.min.css); */
 /*------------------------------------
 	Fonts
@@ -3386,7 +3388,7 @@ nav a:hover {
 
 .submenu-indicator {
     margin-left: 6px;
-    margin-top: 6px;
+    margin-top: 11px;
     float: right;
     transition: all .3s
 }
@@ -3624,7 +3626,7 @@ nav a:hover {
 }
 
 .nav-dropdown {
-    min-width:250px;
+    min-width:160px;
     margin: 0;
     padding: 0;
     display: none;
@@ -3655,7 +3657,7 @@ nav a:hover {
   background-color: #ffffff;
   content: "";
   height: 20px;
-  left: 25px;
+  right: 25px;
   position: absolute;
   top: -10px;
   -webkit-transform: rotate(45deg);
@@ -3682,6 +3684,7 @@ nav a:hover {
     border-bottom: 1px solid #e4e8ec;
     display: inline-block;
     float: left;
+    font-weight: 500;
     color: #445869;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
